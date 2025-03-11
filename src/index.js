@@ -11,7 +11,7 @@ app.listen(3000, async () => {
     console.log('mogo db connected');
     const tweetRepo = new TweetRepository();
     // const tweet = await tweetRepo.create({
-    //     content: "Next tweet"
+    //     content: "tweet with hook"
     // })
     // console.log(tweet);
     // tweet.comments.push({content: "first comment"});
@@ -23,7 +23,7 @@ app.listen(3000, async () => {
     // tweet.comments.push(comment);
     // await tweet.save();
     // console.log(tweet);
-    const tweet = await tweetRepo.getWithComments('67cfd82b26293bf796bda63f');
-    console.log(tweet);
+    // const tweet = await tweetRepo.getAll(4,5);
+    // console.log(tweet[0].contentWithEmail);
     
 })
