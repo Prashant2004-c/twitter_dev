@@ -41,16 +41,6 @@ class TweetRepository {
             throw {error};
         }
     }
-    
-    async update(tweetTd, data) {
-        try {
-            const tweet = await Tweet.findByIdAndUpdate(tweetTd, data, {new: true});
-            return tweet;
-        } catch (error) {
-            console.log(error);
-            throw {error};
-        }
-    }
 
     async getAll(offset, limit) {
         try {
